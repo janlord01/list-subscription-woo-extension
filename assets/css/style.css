@@ -1,0 +1,219 @@
+.user-container.clearfix{
+    width: 100% !important;
+}
+.user-sidebar {
+    float: left;
+    width: 23%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.user-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.user-sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.user-sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.user-content {
+    float: right;
+    width: 75%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.user-content h2 {
+    margin-top: 0;
+}
+
+.user-content form {
+    margin-top: 20px;
+}
+
+.user-content form input[type="text"],
+.user-content form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.user-content form input[type="submit"],
+.user-content form .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073aa;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user-content form input[type="submit"]:hover,
+.user-content form .button:hover {
+    background-color: #005a8c;
+}
+
+.success-message {
+    color: green;
+}
+
+.error-message {
+    color: red;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Clearfix for the floated elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.subscription-tiers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.subscription-tier {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    width: 100% !important;
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.subscription-tier:hover {
+    background-color: #eaeaea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-tier h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.subscription-tier p {
+    font-size: 1em;
+    color: #666;
+}
+
+.subscription-tier .price {
+    font-size: 1.2em;
+    color: #0073aa;
+}
+
+.subscription-tier .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073aa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.subscription-tier .button:hover {
+    background-color: #005a8c;
+}
+
+.subscription-tier .subscribed {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.user-listings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.user-listings-table th, .user-listings-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.user-listings-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+input.listing_button_submit {
+    margin-top: 20px !important;
+}
+
+
+
+@media (max-width: 768px) {
+    .user-listings-table thead {
+        display: none;
+    }
+
+    .user-listings-table tr {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .user-listings-table td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .user-listings-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .subscription-tier {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscription-tier {
+        width: 100%;
+    }
+}
